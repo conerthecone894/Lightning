@@ -7,6 +7,7 @@ int y2 = 400;
 int countdown = 0;
 
 int o = 0;
+int o1 = 255;
 int o2 = 0;
 //opacity values for flash and chan
 
@@ -31,10 +32,13 @@ void setup(){
 }
 
 void draw() {  
-  System.out.println(countdown);
   noStroke();
   fill(47, 47, 54, 75);
   rect(0, 0, 512, 512);
+
+if(order == 4)
+  o1 = 75;
+
   //background
   
   if (keyPressed == true && order == 4 && countdown < 200){
