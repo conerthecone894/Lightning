@@ -31,7 +31,6 @@ void setup(){
 }
 
 void draw() {  
-  System.out.println(countdown);
   noStroke();
   fill(47, 47, 54, 75);
   rect(0, 0, 512, 512);
